@@ -15,16 +15,19 @@ const Home = () => {
   const [dgUse, setDgUse] = useState("");
 
   const postDetail = () =>
-    axios.post("https://videoaudit-server.onrender.com/api/marketing/add",{
-        newCustomerName:newCustomerName,
-        mobNo:mobNo,
-        newCustomerAddress:newCustomerAddress,
-        businessName:businessName,
-        businesstype:businesstype,
-        businessYear:businessYear,
-        dgForYourBusiness:dgForYourBusiness,
-        dgUse:dgUse
-    }).then((response) => console.log(response)).catch((err) => console.log(err));
+    axios
+      .post("https://videoaudit-server.onrender.com/api/marketing/add", {
+        newCustomerName: newCustomerName,
+        mobNo: mobNo,
+        newCustomerAddress: newCustomerAddress,
+        businessName: businessName,
+        businesstype: businesstype,
+        businessYear: businessYear,
+        dgForYourBusiness: dgForYourBusiness,
+        dgUse: dgUse,
+      })
+      .then((response) => console.log(response))
+      .catch((err) => console.log(err));
 
     const handleOldBusiness = (e) => {
         setBusinessYear(e.target.value)
