@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './style.css'
 import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
@@ -40,9 +40,9 @@ const Home = () => {
 
   return (
     <Container>
-      <Navbar />
+      <Navbar className='navbar' />
       <div>
-        <Card border="light" className="bg-white shadow-sm mb-4 mt-5">
+        <Card className="bg-white shadow-sm mb-4 mt-5" id="bg">
           <Card.Body>
             <Form>
               <Row>
@@ -153,10 +153,17 @@ const Home = () => {
                       onChange={handleDgYourBusiness}
                     >
                       <option>--Select Option --</option>
-                      <option value="business awareness">Business Awareness</option>
-                      <option value="to get more walking">To get more walking</option>
+                      <option value="business awareness">
+                        Business Awareness
+                      </option>
+                      <option value="to get more walking">
+                        To get more walking
+                      </option>
                       <option value="to get sales">To get sales </option>
-                      <option value="just ad">Just Ad</option>
+                      <option value="smm">social Media Maintenance(SMM)</option>
+                      <option value="facebood-ad">Facebook Ad's</option>
+                      <option value="google-ad">Google Ad's</option>
+                      <option value="website-ad">Website Ad's </option>
                     </Form.Select>
                   </Form.Group>
                 </Col>

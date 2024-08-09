@@ -1,0 +1,28 @@
+#bg {
+    background-image: url('../../bg1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+        background-position: center;
+        background-position-y: 80px;
+        background-size: 45rem 40rem;
+}
+
+ @media (max-width: 767px) {
+   
+    #bg {
+background-image: url('../../bg2.png')  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+        }
+ }
+
+ @media (max-width: 400px) {
+   
+    #bg {
+            background-image: url('https: //avidigitaltechnologies.com/wp-content/uploads/2023/10/smm-media.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 20rem 10rem;
+        }
+ }
