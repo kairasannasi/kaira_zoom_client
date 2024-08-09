@@ -16,7 +16,7 @@ const Home = () => {
 
   const postDetail = () =>
     axios
-      .post("https://videoaudit-server.onrender.com/api/marketing/add", {
+      .post("http://localhost:4000/api/marketing/add", {
         newCustomerName: newCustomerName,
         mobNo: mobNo,
         newCustomerAddress: newCustomerAddress,
@@ -145,7 +145,7 @@ const Home = () => {
                 </Col>
               </Row>
               <Row>
-                <Col md={12} className="mb-3">
+                <Col md={6} className="mb-3">
                   <Form.Group id="dgForYourBusiness">
                     <Form.Label>
                       Why you want to do Digital Marketing for your business
@@ -155,7 +155,7 @@ const Home = () => {
                       value={dgForYourBusiness}
                       onChange={handleDgYourBusiness}
                     >
-                      <option>--Select Option --</option>
+                       <option>--Select Option --</option>
                       <option value="business awareness">
                         Business Awareness
                       </option>
@@ -170,7 +170,9 @@ const Home = () => {
                     </Form.Select>
                   </Form.Group>
                 </Col>
-              </Row>
+                </Row>
+                     
+                    
 
               <div
                 className="mt-3"
