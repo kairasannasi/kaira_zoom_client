@@ -16,7 +16,7 @@ const Home = () => {
 
   const postDetail = () =>
     axios
-      .post("http://localhost:4000/api/marketing/add", {
+      .post("https://videoaudit-server.onrender.com/api/marketing/add", {
         newCustomerName: newCustomerName,
         mobNo: mobNo,
         newCustomerAddress: newCustomerAddress,
