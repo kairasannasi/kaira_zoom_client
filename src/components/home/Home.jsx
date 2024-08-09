@@ -40,7 +40,7 @@ const Home = () => {
 
   return (
     <Container>
-      <Navbar className='navbar' />
+      <Navbar className="navbar" />
       <div>
         <Card className="bg-white shadow-sm mb-4 mt-5" id="bg">
           <Card.Body>
