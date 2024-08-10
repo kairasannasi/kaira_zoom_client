@@ -19,7 +19,7 @@ const Schedule = () => {
     <Container>
       <Navbar />
       <div>
-        <InlineWidget url="https://calendly.com/d/cmb6-9rd-cv9/60-mins-meeting" />
+        <InlineWidget url="https://calendly.com/sivaramya-kairatechnologies/30min" />
 
         <Button variant="danger">
           <Link to="/" style={{ color: "white", textDecoration: "none" }}>
@@ -51,8 +51,6 @@ const Schedule = () => {
           </div>
         </>
       )} */}
-
-      
     </Container>
   );
 }
